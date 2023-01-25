@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
 
 private fun createEvent() {
     val event = VEvent()
-    // set the start and en date
+    // set start and end dates
     val startDateTime = LocalDateTime.of(2022, 1, 1, 10, 0)
     event.setDateStart(Date.from(startDateTime.toInstant(ZoneOffset.UTC)), true)
     val endDateTime = startDateTime.plusDays(2).plusHours(1).plusMinutes(30)
